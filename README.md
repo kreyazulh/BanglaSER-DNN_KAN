@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ## Datasets
 
-None of the audio is redistributed here, grab them from the sources below and
+None of the audio is redistributed here, get them from the sources below and
 point `config.py` (or the `--data_dir` flag) at the unzipped folders.
 
 | Dataset | Lang | Classes | Where |
@@ -47,7 +47,7 @@ point `config.py` (or the `--data_dir` flag) at the unzipped folders.
 | BanglaSER | Bangla | 6 | [Mendeley Data](https://data.mendeley.com/datasets/t9h6p943xy) / [paper](https://doi.org/10.1016/j.dib.2022.108091) |
 | RAVDESS | English | 8 | [Kaggle](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio) |
 | EmoDB | German | 7 | [Kaggle](https://www.kaggle.com/datasets/piyushagni5/berlin-database-of-emotional-speech-emodb) |
-| EMOVO | Italian | 7 | [official page](http://voice.fub.it/activities/corpora/emovo/index.html) |
+| EMOVO | Italian | 7 | [Kaggle](https://www.kaggle.com/datasets/sourabhy/emovo-italian-ser-dataset) |
 
 Kaggle mirrors occasionally rename files. The label parsers live in
 `utils/data.py`, fix them there if your copy looks different (the scripts will
@@ -115,7 +115,7 @@ utils/
 No augmentation used anywhere. SD numbers and cross-dataset results
 (RAVDESS / EMOVO / EmoDB) are in the paper, Tables 2 and 3.
 
-## Notes / gotchas
+## Notes
 
 - Training defaults follow the paper: AdamW, lr 5e-4, weight decay 0.015,
   dropout 0.3, batch 16, max 200 epochs with patience 50, cross-entropy with
@@ -127,14 +127,14 @@ No augmentation used anywhere. SD numbers and cross-dataset results
 - pyin makes extraction slow (~1-2s/clip on cpu). Cached features land in
   `features_cache/` so it's a one-time cost.
 - Exact accuracy can wobble a bit (+/- 1%) across hardware/library versions
-  even with the seed fixed, that's normal.
+  even with the seed fixed.
 
 ## Citation
 
 ```bibtex
 @inproceedings{dnnkan2026bangla,
   title     = {Dual-Stream DNN-KAN Networks with Bangla-Specific Features for Speech Emotion Recognition},
-  author    = {...},
+  author    = {Kazi Reyazul Hasan, Muhammad Abdullah Adnan},
   booktitle = {Proc. Interspeech 2026},
   year      = {2026}
 }
