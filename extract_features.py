@@ -1,10 +1,5 @@
 """Extract spectral (80d) + prosodic (51d) features for a whole dataset and
-cache them as one .npz. pyin is the slow part, expect ~1-2s per clip on cpu,
-so SUBESCO takes a while. run once, training reads the cache.
-
-usage:
-    python extract_features.py --dataset subesco --data_dir /path/to/SUBESCO
-    python extract_features.py --dataset emodb            # uses path from config.py
+cache them as one .npz. pyin is the slow part, expect ~1-2s per clip on cpu.
 """
 
 import argparse
