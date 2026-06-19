@@ -1,9 +1,6 @@
-"""Bidirectional cross attention between the two streams.
-
-Early stage (128d, 4 heads): spectral queries attend to prosodic and vice
+"""Early stage (128d, 4 heads): spectral queries attend to prosodic and vice
 versa, locating where pitch events sit in the mfcc stream. Late stage
-(256d, 8 heads): roles reverse for high level integration. The 0.5 residual
-weight keeps the original features dominant (sec 3.3).
+(256d, 8 heads): roles reverse for high level integration. 
 """
 
 import torch.nn as nn
