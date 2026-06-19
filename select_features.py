@@ -1,12 +1,6 @@
-"""Eta-squared feature selection (eq 1 in the paper).
-
+"""Eta-squared feature selection 
 Runs one-way ANOVA per candidate feature against emotion labels, computes
-eta^2 = SS_between / SS_total, keeps features above the threshold.
-Deliberately uses only a small fraction (10%) of the TRAIN split so the
-selection doesn't overfit the corpus, and so it stays cheap.
-
-usage:
-    python select_features.py --dataset subesco
+eta^2 = SS_between / SS_total, keeps features above the threshold
 """
 
 import argparse
