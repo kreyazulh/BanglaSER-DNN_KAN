@@ -1,8 +1,3 @@
-"""Central config. Edit the data_dir paths to point at wherever you unzipped
-the datasets. Emotion lists and filename parsing differ per corpus, so each
-dataset gets its own block here instead of hardcoding things all over.
-"""
-
 # NOTE: kaggle mirrors sometimes rename files / reorganize folders.
 # If label parsing breaks, fix the parser in utils/data.py for your copy.
 
