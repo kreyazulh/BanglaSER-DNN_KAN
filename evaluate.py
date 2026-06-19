@@ -1,6 +1,6 @@
 """Evaluate a trained checkpoint: overall + per-class accuracy, confusion
 matrix png, and optionally a McNemar significance test against another
-model's predictions (this is the test reported in the paper, p < 0.01).
+model's predictions.
 
 usage:
     python evaluate.py --dataset subesco --ckpt checkpoints/subesco_si.pt
