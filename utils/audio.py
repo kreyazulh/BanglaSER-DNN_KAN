@@ -1,7 +1,6 @@
 """Low level feature computation. librosa does most of the work here.
 The paper used OpenSMILE for the candidate pool, this is a librosa port that
-gets very close. HNR is approximated with an HPSS energy ratio, if you want
-the exact praat-style HNR install parselmouth and swap it in (left a hook).
+gets very close. HNR is approximated with an HPSS energy ratio.
 """
 
 import numpy as np
