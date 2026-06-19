@@ -3,12 +3,6 @@
   --split si   speaker independent (the headline metric, default)
   --split sd   speaker dependent (reference only, inflated)
   --split cv   speaker-wise 5-fold cross validation
-
-no augmentation anywhere, on purpose (see sec 3.4 of the paper).
-
-usage:
-    python extract_features.py --dataset subesco --data_dir ...
-    python train.py --dataset subesco --split si
 """
 
 import argparse
